@@ -52,16 +52,24 @@
             margin: 0 auto;
             padding: 20px;
         }
-        .intro {
-            text-align: center;
-            margin: 50px 0;
+        .intro, .skills, .experience, .education, .testimonials, .blog, .projects, .contact {
+            margin-bottom: 50px;
         }
-        .intro h2 {
+        h2 {
             font-size: 2.5em;
             margin-bottom: 20px;
+            text-align: center;
         }
-        .projects, .contact {
-            margin-bottom: 50px;
+        .skills ul, .experience ul, .education ul, .testimonials ul, .blog ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li, .experience li, .education li, .testimonials li, .blog li {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .project-item {
             background-color: #fff;
@@ -73,10 +81,6 @@
         }
         .project-item:hover {
             transform: translateY(-5px);
-        }
-        .project-item h3 {
-            margin-top: 0;
-            font-size: 1.5em;
         }
         footer {
             text-align: center;
@@ -94,6 +98,11 @@
 
 <nav>
     <a href="#intro">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#blog">Blog</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 </nav>
@@ -108,6 +117,48 @@
     <section id="intro" class="intro">
         <h2>About Me</h2>
         <p>Hello! I'm Md. Sozib Hossain, a passionate developer and educator at Rajshahi University of Engineering & Technology (RUET). Welcome to my personal portfolio. Here you can find information about me, my projects, and how to get in touch.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, JavaScript, C++</li>
+            <li>Web Development: HTML, CSS, JavaScript, React, Node.js</li>
+            <li>Database Management: MySQL, PostgreSQL, MongoDB</li>
+            <li>Tools & Technologies: Git, Docker, Kubernetes</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Lecturer at RUET</strong> (2020 - Present) - Teaching various computer science and engineering courses.</li>
+            <li><strong>Software Developer at XYZ Company</strong> (2018 - 2020) - Developed web applications and provided technical support.</li>
+        </ul>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Master of Science in Computer Science</strong> - ABC University (2016 - 2018)</li>
+            <li><strong>Bachelor of Science in Computer Science and Engineering</strong> - Rajshahi University of Engineering & Technology (RUET) (2012 - 2016)</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <ul>
+            <li>"Sozib is an outstanding developer and educator. His dedication and expertise are truly remarkable." - John Doe, Colleague</li>
+            <li>"Working with Sozib has been a pleasure. He consistently delivers high-quality work and is a great team player." - Jane Smith, Client</li>
+        </ul>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <ul>
+            <li><strong>Understanding Machine Learning Algorithms</strong> - An in-depth look at various machine learning techniques and their applications.</li>
+            <li><strong>Web Development Trends in 2024</strong> - Exploring the latest trends and technologies in web development.</li>
+        </ul>
     </section>
 
     <section id="projects" class="projects">
